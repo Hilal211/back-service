@@ -103,7 +103,7 @@ class UsersController {
 
     async login(req, res) {
         const { email, password } = req.body;
-
+        console.log(email, password)
         // Simple validation
         if (!email || !password) {
             return res.status(400).json({ msg: 'Please enter all fields' });
