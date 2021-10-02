@@ -43,9 +43,6 @@ class OffersController {
             var image = [req.file.filename].toString();
 
         }
-
-
-
         await Offer.findById(id, (err, response) => {
             if (err) return next(err);
             console.log("response", response);

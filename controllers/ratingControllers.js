@@ -58,7 +58,13 @@ class RatingController {
         })
     }
 
-    
+    getFiveRate(req, res, next) {
+        Rating.find({rate:"5"}, (err, response) => {
+            if (err) return next(err);
+            res.status(200).send(response);
+
+        })
+    };
   
   
 

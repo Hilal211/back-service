@@ -7,6 +7,7 @@ var ratingController = require('../controllers/ratingControllers')
     router.delete('/:id', ratingController.delete);
     router.get('/getbysp/:id', ratingController.getBySp);
     router.get('/v', ratingController.getStatistique);
+    router.get('/getfiverate', ratingController.getFiveRate);
 
     
 
