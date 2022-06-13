@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "DEBUG=back-finale:* nodemon node ./bin/www"
+    "start": "set DEBUG=my-application & node ./bin/www"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
